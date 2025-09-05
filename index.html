@@ -2,46 +2,56 @@
 layout: default
 title: Home
 ---
-
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     .event-collage {
       position: relative;
       width: 100%;
-      max-width: 500px;
-      height: 380px;
+      max-width: 550px;
+      height: 400px;
       margin: 0 auto;
+      perspective: 1000px; /* subtle depth */
     }
 
     .event-collage img {
       position: absolute;
-      border-radius: 10px;
+      border-radius: 12px;
       object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .event-collage img:hover {
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      z-index: 10;
     }
 
     .event-collage .img1 {
       width: 100%;
-      height: 160px;
+      height: 180px;
       top: 0;
       left: 0;
       z-index: 1;
     }
 
     .event-collage .img2 {
-      width: 60%;
-      height: 200px;
+      width: 65%;
+      height: 210px;
       top: 160px;
       left: 0;
+      transform: rotate(-2deg);
       z-index: 2;
     }
 
     .event-collage .img3 {
-      width: 45%;
-      height: 120px;
-      top: 120px;
+      width: 50%;
+      height: 140px;
+      top: 130px;
       right: 0;
+      transform: rotate(3deg);
       z-index: 3;
     }
 
@@ -50,17 +60,19 @@ title: Home
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 14px;
       }
 
       .event-collage img {
         position: static;
         width: 100% !important;
         height: auto !important;
+        transform: none !important;
       }
     }
   </style>
 </head>
+
 
 {% if page.url == "/" %}
 <div class="mainheading text-center">
