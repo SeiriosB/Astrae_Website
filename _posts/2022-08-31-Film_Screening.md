@@ -1,7 +1,7 @@
 ---
 #YAML part
 layout: post
-title: Film Screening: Rocketry - The Nambi Effect
+title: 'Film Screening: Rocketry - The Nambi Effect'
 tags: [Screening, Rocketry]
 author: Kenil Ajudiya
 categories: event

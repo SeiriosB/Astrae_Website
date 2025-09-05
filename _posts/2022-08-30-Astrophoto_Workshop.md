@@ -1,7 +1,7 @@
 ---
 #YAML part
 layout: post
-title: Astrophotography and Image processing Workshop: Idea Presentation Day
+title: 'Astrophotography and Image processing Workshop: Idea Presentation Day'
 tags: [Astrophotgraphy]
 author: Kenil Ajudiya
 categories: event
