@@ -5,7 +5,7 @@ title: Boom Goes the Rocket!
 tags: [Rocket, Photography, AzaadiSAT]
 author: Kenil Ajudiya
 categories: blog
-image: "/assets/images/Stories/Rocket_2.jpeg"
+image: "/assets/images/Stories/Rocket_2.jpg"
 excerpt: 'Astrae members traveled to Sriharikota to witness ISRO’s first SSLV-D1/EOS-02 mission launch, carrying EOS-02 and the student-built AzaadiSAT.'
 featured: true
 latest: false
@@ -18,7 +18,7 @@ August 07, 2022 was the scheduled launch of the ISRO's SSLV-D1/EOS-02 Mission. I
 
 Kenil, Gaurav, Deep, Vivek and Tasmay went to Satish Dhawan Space Centre, Sriharikota to witness the launch. Here are some of the pics published by ISRO and a few clicked by Kenil.
 
-![SSLV-D1 Launch](/assets/images/Stories/Rocket_1.jpeg)
-![EOS-02 and AzaadiSAT mounted on the nose platform](/assets/images/Stories/Rocket_3.jpeg)
-![Welcome to SDSC, Sriharikota](/assets/images/Stories/Rocket_4.jpeg)
-![(Left to right) Tasmay, Deep , Gaurav and Vivek at the launch view gallery, SDSC, Sriharikota](/assets/images/Stories/Rocket_5.jpeg)
+![SSLV-D1 Launch](/assets/images/Stories/Rocket_1.jpg)
+![EOS-02 and AzaadiSAT mounted on the nose platform](/assets/images/Stories/Rocket_3.jpg)
+![Welcome to SDSC, Sriharikota](/assets/images/Stories/Rocket_4.jpg)
+![(Left to right) Tasmay, Deep , Gaurav and Vivek at the launch view gallery, SDSC, Sriharikota](/assets/images/Stories/Rocket_5.jpg)

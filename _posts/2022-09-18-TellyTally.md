@@ -5,9 +5,9 @@ title: A 'Tele' added a Tally... \^o^/
 tags: [Telescope]
 author: Kenil Ajudiya
 categories: blog
-image: "/assets/images/Stories/telescope.jpeg"
+image: "/assets/images/Stories/telescope.jpg"
 excerpt: 'Astrae, with support from Kalam Labs, acquired an 8-inch GSO Dobsonian telescope and astrophotography accessories to enhance observational astronomy.'
-featured: true
+featured: false
 latest: false
 all: true
 ---

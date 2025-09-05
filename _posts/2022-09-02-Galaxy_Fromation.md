@@ -5,7 +5,7 @@ title: A Talk on Galaxy Formation and Dynamics by Shashank Dattathri
 tags: [Galaxies, Millenium Run]
 author: Kenil Ajudiya
 categories: event
-image: "/assets/images/Stories/Galaxy_1.jpeg"
+image: "/assets/images/Stories/Galaxy_1.jpg"
 excerpt: 'Shashank Dattathri (IISc UG ’16, now a Ph.D. student at Yale) delivered a talk on galaxy formation and dynamics, enriched with stunning simulations like the Millennium run.'
 featured: true
 latest: false

@@ -5,7 +5,7 @@ title: Astrae goes into "ORBITS"
 tags: [Orbits, Mechanics]
 author: Kenil Ajudiya
 categories: event
-image: "/assets/images/Stories/Astrae_Orbits.jpeg"
+image: "/assets/images/Stories/Astrae_Orbits.jpg"
 excerpt: 'Astrae Club explored orbital mechanics and fuel-efficient transfer orbits, followed by a hands-on Spaceflight Simulator challenge.'
 featured: true
 latest: false

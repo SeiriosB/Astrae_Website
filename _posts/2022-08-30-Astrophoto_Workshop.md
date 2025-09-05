@@ -5,7 +5,7 @@ title: 'Astrophotography and Image processing Workshop: Idea Presentation Day'
 tags: [Astrophotgraphy]
 author: Kenil Ajudiya
 categories: event
-image: "/assets/images/Stories/AstroPhotography.jpeg"
+image: "/assets/images/Stories/AstroPhotography.jpg"
 excerpt: 'On August 1, 2022, the Astrae Club welcomed its first mentor, Prof. Aloke Kumar, during the astrophotography and image processing workshop idea presentation.'
 featured: true
 latest: false
