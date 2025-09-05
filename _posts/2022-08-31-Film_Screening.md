@@ -5,7 +5,7 @@ title: 'Film Screening: Rocketry - The Nambi Effect'
 tags: [Screening, Rocketry]
 author: Kenil Ajudiya
 categories: event
-image: "/assets/images/Stories/Film_Screening.jpeg"
+image: "/assets/images/Stories/Film_Screening.jpg"
 excerpt: 'Astrae Club hosted a screening of Rocketry: The Nambi Effect, celebrating ISRO’s pioneers and the triumph of the VIKAS engine.'
 featured: false
 latest: false
