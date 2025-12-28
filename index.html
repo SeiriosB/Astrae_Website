@@ -70,6 +70,17 @@ title: Home
         transform: none !important;
       }
     }
+    
+    /* Ensure the header expands beyond the container if necessary, or just fills it */
+    .home-header-container {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow: hidden;
+    }
   </style>
 </head>
 
@@ -78,9 +89,16 @@ title: Home
 <div class="mainheading text-center">
 </div>
 
-<p class="intro-text">
-  Astrae is the undergraduate astronomy club of IISc, offering a glimpse into the vast universe which we occupy.
-</p>
+<div class="home-header-container">
+    <div class="home-header" style="position: relative; text-align: center; color: white; margin-bottom: 2rem;">
+        <img src="{{site.baseurl}}/assets/images/astrae_aesthetic.jpg" alt="Astrae" style="width: 100%; height: auto; display: block; filter: brightness(0.7);">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%;">
+            <h1 style="font-family: 'Orbitron', sans-serif; font-size: 1.75rem; font-weight: 700; color: white; -webkit-text-stroke: 1px black; line-height: 1.4;">
+                Astrae is IISc's undergraduate astronomy and astrophysics club, a vibrant student community sharing a collective passion for the cosmos.
+            </h1>
+        </div>
+    </div>
+</div>
 
 <!-- EVENTS SECTION -->
 <section class="events-section my-5">
@@ -88,7 +106,7 @@ title: Home
     <div class="col-md-6">
       <h2><a href="{{ '/events' | relative_url }}">Events</a></h2>
       <p>
-        From night sky explorations that invite everyone to marvel at the cosmos, to engaging talks on topics like stellar structure and evolution, celestial mechanics, and the dynamics of galaxies, Astrae brings complex ideas within reach of all. Whether you’re deeply curious about astrophysics or simply eager to experience the beauty of the night sky, Astrae is the right place for you. Alongside lectures, workshops, and hands-on activities, Astrae fosters collaboration, creativity, and community. At its heart, the club exists to bring the IISc undergraduate community together across disciplines, through a shared passion for learning, discovery, and wonder.
+        From night sky explorations that invite everyone to marvel at the cosmos, to engaging talks on topics like stellar structure and evolution, celestial mechanics, and the dynamics of galaxies, Astrae brings complex ideas within reach of all. Whether you’re deeply curious about astrophysics or simply eager to experience the beauty of the night sky, Astrae is the right place for you. Alongside lectures, workshops, and hands-on activities, Astrae fosters collaboration, creativity, and community. At its heart, the club exists to bring the IISc community together across disciplines, through a shared passion for learning, discovery, and ultimately, a desire to understand the heavens above.
       </p>
     </div>
     <div class="col-md-6">

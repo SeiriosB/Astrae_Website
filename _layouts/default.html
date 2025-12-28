@@ -53,7 +53,7 @@ ga('send', 'pageview');
 <body class="{{layout}}">
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i%7COrbitron:400,700,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
 
@@ -65,9 +65,10 @@ ga('send', 'pageview');
     <div class="container pr-0">
 
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <div class="navbar-brand">
     <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>
+    <span class="brand-text">ASTRAE</span>
+    </div>
     <!-- End Logo -->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,36 +81,57 @@ ga('send', 'pageview');
 
             <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
+                <li class="nav-item {% if page.title == 'Home' %}active{% endif %}">
+                {% if page.title == 'Home' %}
+                <span class="nav-link">Home</span>
                 {% else %}
-                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
                 {% endif %}
+                </li>
 
-                <li class="nav-item">
+                <li class="nav-item {% if page.title == 'Events' or page.categories contains 'event' %}active{% endif %}">
+                {% if page.title == 'Events' or page.categories contains 'event' %}
+                <span class="nav-link">Events</span>
+                {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/events">Events</a>
+                {% endif %}
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item {% if page.title == 'Blog' or page.categories contains 'blog' %}active{% endif %}">
+                {% if page.title == 'Blog' or page.categories contains 'blog' %}
+                <span class="nav-link">Blog</span>
+                {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
+                {% endif %}
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item {% if page.title == 'Pictures' or page.categories contains 'pictures' %}active{% endif %}">
+                {% if page.title == 'Pictures' or page.categories contains 'pictures' %}
+                <span class="nav-link">PhotoArchive</span>
+                {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/pictures">PhotoArchive</a>
+                {% endif %}
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item {% if page.title == 'News' or page.categories contains 'news' %}active{% endif %}">
+                {% if page.title == 'News' or page.categories contains 'news' %}
+                <span class="nav-link">News</span>
+                {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/news">News</a>
+                {% endif %}
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item {% if page.title == 'About Us' %}active{% endif %}">
+                {% if page.title == 'About Us' %}
+                <span class="nav-link">About Us</span>
+                {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/aboutus">About Us</a>
+                {% endif %}
                 </li>
 
-                {% if page.url contains '/blog' %}
+                {% if page.title == 'Blog' or page.categories contains 'blog' %}
                 {% include search-lunr.html %}
                 {% endif %}
-
 
             </ul>
 
