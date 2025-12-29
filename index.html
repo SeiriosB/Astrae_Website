@@ -111,9 +111,12 @@ title: Home
     </div>
     <div class="col-md-6">
       <div class="event-collage">
-        <img src="assets\images\Events_1.png" alt="Event photo 1" class="img1">
-        <img src="assets\images\Events_2.png" alt="Event photo 2" class="img2">
-        <img src="assets\images\Events_3.png" alt="Event photo 3" class="img3">
+        {% assign event_posts = site.posts | where: "categories", "event" | slice: 0, 3 %}
+        {% for post in event_posts %}
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="img{{ forloop.index }}">
+          </a>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -125,7 +128,7 @@ title: Home
     <h2><a href="Astrae_Website/blog"><span>Blog</span></a></h2>
   </div>
   <div class="row listrecent">
-    {% assign blog_posts = site.posts | where: "all", true | slice: 0, 3 %}
+    {% assign blog_posts = site.posts | where: "categories", "blog" | slice: 0, 3 %}
     {% for post in blog_posts %}
       {% include postbox.html %}
     {% endfor %}
