@@ -5,7 +5,11 @@ title: Celestial Mechanics for the Uninitiated
 tags: [Astrophysics, Talk, CelMech]
 author: Animesh Pradhan
 categories: event
-image: "/assets/images/1.jpeg"
+image: "/assets/images/2.jpeg"
+side_gallery:
+    - /assets/images/1.jpeg
+    - /assets/images/3.jpeg
+    - /assets/images/17.jpeg
 excerpt: 'A Talk on Celestial Mechanics by Animesh Pradhan, featuring a documentary screening, detailed mathematics and a trajectory simulation.'
 featured: true
 latest: false
@@ -23,7 +27,6 @@ The talk began with a screening of the documentary of "How the Universe Works", 
 
 Clear Skies!
 
-Astrae
 
 ### Lecture Notes
 

@@ -90,7 +90,7 @@ ga('send', 'pageview');
                 </li>
 
                 <li class="nav-item {% if page.title == 'Events' or page.categories contains 'event' %}active{% endif %}">
-                {% if page.title == 'Events' or page.categories contains 'event' %}
+                {% if page.title == 'Events' %}
                 <span class="nav-link">Events</span>
                 {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/events">Events</a>
@@ -98,7 +98,7 @@ ga('send', 'pageview');
                 </li>
 
                 <li class="nav-item {% if page.title == 'Blog' or page.categories contains 'blog' %}active{% endif %}">
-                {% if page.title == 'Blog' or page.categories contains 'blog' %}
+                {% if page.title == 'Blog' %}
                 <span class="nav-link">Blog</span>
                 {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
@@ -106,7 +106,7 @@ ga('send', 'pageview');
                 </li>
 
                 <li class="nav-item {% if page.title == 'Pictures' or page.categories contains 'pictures' %}active{% endif %}">
-                {% if page.title == 'Pictures' or page.categories contains 'pictures' %}
+                {% if page.title == 'Pictures' %}
                 <span class="nav-link">PhotoArchive</span>
                 {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/pictures">PhotoArchive</a>
@@ -114,7 +114,7 @@ ga('send', 'pageview');
                 </li>
 
                 <li class="nav-item {% if page.title == 'News' or page.categories contains 'news' %}active{% endif %}">
-                {% if page.title == 'News' or page.categories contains 'news' %}
+                {% if page.title == 'News' %}
                 <span class="nav-link">News</span>
                 {% else %}
                 <a class="nav-link" href="{{ site.baseurl }}/news">News</a>
@@ -145,7 +145,8 @@ ga('send', 'pageview');
 
 <div class="site-content">
 
-<div class="container">
+
+<div class="{% if page.layout == 'post' %}container-fluid p-0{% else %}container{% endif %}">
 
 <!-- Content -->
 <div class="main-content">
