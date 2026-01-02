@@ -38,7 +38,7 @@ var documents = [{
     "id": 7,
     "url": "https://nandan-aditey.github.io/Astrae_Website/news/",
     "title": "News",
-    "body": "       &lt;   :    &gt;         Latest News:   {% assign news_posts = site. posts | where:  categories ,  news  %}  {% assign sorted_posts = news_posts | sort:  date  %}  {% for post in sorted_posts %}            {{ post. date | date:  %b %d  }}             {{ post. title }}:      {% if post. image %}           {% endif %}     {{ post. excerpt | strip_html | truncate: 160 }}          {% endfor %} "
+    "body": "       &lt;   :    &gt;             Bright Constellations (21:00 - 04:00):             Messier Marathon (21:00 - 04:00):           News for this Month:         "
     }, {
     "id": 8,
     "url": "https://nandan-aditey.github.io/Astrae_Website/pictures/",
