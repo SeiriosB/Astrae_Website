@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Astrae</title>
+    <description>By IISc UG</description>
+    <link>https://nandan-aditey.github.io/Astrae_Website/</link>
+    <atom:link href="https://nandan-aditey.github.io/Astrae_Website/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 02 Jan 2026 19:00:41 +0000</pubDate>
+    <lastBuildDate>Fri, 02 Jan 2026 19:00:41 +0000</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Watching the Geminids Meteor Shower</title>
+        <description>&lt;p&gt;Author: Animesh Pradhan&lt;/p&gt;
+
+&lt;p&gt;As another semester winds to a close, we organised a general observation session dedicated to the bright Geminids meteor shower. With the skies above Bangalore finally clearing up, the heavens offered us a wonderful opportunity to watch one of the brightest meteor showers of them all, with lots of stars to boot.&lt;/p&gt;
+
+&lt;p&gt;People from various departments in IISc, along with some guests came together to watch the shower. The chilly weather forced everyone to wear jackets and use blankets, but only ended up strengthening their resolve to watch just another meteor. Some of us tried taking continuous short exposure shots to capture meteors, an effort which mostly didn’t yield fruit(The last image here is one the few that had a meteor in it, look at the streak in the top-left). As people from all walks of life came together, forgetting the worries of the day for just one night, to lie down and try seeing as many meteors as possible. While my personal meteor count only went to 16, many people managed to get as many as 22 within a few hours of skywatching. Not everyone managed to make their wishes in time though, as each meteor only lasted a second or two at most, the longest ones going to about 3-4 seconds. Each streak of bright light in the heavens was followed by excited shouts, and a tinge of disappointment for those who happened to be looking at the wrong direction.&lt;/p&gt;
+
+&lt;p&gt;Most meteor showers occur when Earth’s orbit passes through the debris trail left by a comet, where the debris falls in and burns up in the atmosphere forming the meteors we awe at. The yearly Geminid shower, however, are formed by a debris trail of an asteroid, 3200 Phaethon. It is one of only two major meteor showers associated with an asteroid and among the most prolific of them all. Meteor showers derive their name from the constellation where the origin point of the meteor lie, i.e. the point where all the meteor trails, when extended, converge. This point, called the radiant, lies about 34-53 arcminutes from Castor, the second brightest star of Gemini.&lt;/p&gt;
+
+&lt;p&gt;The observation session concluded on a positive note, with people going back home with memories to remember, long after the night was gone. Only time will tell however, what wishes come true, and what remains, the fault in our meteors..&lt;/p&gt;
+
+&lt;p&gt;Clear Skies!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Geminids_Meteor_Shower_Observation_Session/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Geminids_Meteor_Shower_Observation_Session/</guid>
+        
+        <category>Astronomy</category>
+        
+        <category>Meteor Shower</category>
+        
+        <category>Geminids</category>
+        
+        
+        <category>event</category>
+        
+      </item>
+    
+      <item>
+        <title>Total Lunar Eclipse Observation Session</title>
+        <description>&lt;p&gt;Author: Animesh Pradhan&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Lunar_Eclipse/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Lunar_Eclipse/</guid>
+        
+        <category>Astronomy</category>
+        
+        <category>Meteor Shower</category>
+        
+        <category>Geminids</category>
+        
+        
+        <category>event</category>
+        
+      </item>
+    
+      <item>
+        <title>Celestial Mechanics for the Uninitiated</title>
+        <description>&lt;p&gt;Author: Animesh Pradhan&lt;/p&gt;
+
+&lt;p&gt;Kicking off a new semester filled with exciting sessions, we started with the first talk on a series to explain Astrophysics to beginners and challenge the enthusiasts as well.&lt;/p&gt;
+
+&lt;p&gt;Have you ever wondered how we know that we are safe from any asteroid impact for atleast a decade? Or how did we figure out that Oumuamua was an interstellar object?&lt;/p&gt;
+
+&lt;p&gt;The answers to these questions lie in the elementary but surprisingly involved and beautiful theory of Celestial Mechanics.&lt;/p&gt;
+
+&lt;p&gt;The talk began with a screening of the documentary of “How the Universe Works”, followed by a detailed dive into the mathematics of Celestial Mechanics, building from the basic foundations laid by Kepler. Instead of solving the equations of planetary motion via the standard rotational pseudo-potential method, we analyzed the differential equation itself in detail, building a solution from the ground up via the constants of motion. Using the beautiful concept of the eccentricity vector(also called the LRL vector), we found the trajectories of motion both in the regular coordinate frame as well as a beautiful result in the phase space. We then tried to analyse the solutions for the three-body problem and the multi-body problem, leading to discussion on the famous Lagrange points and the Virial Theorem. Finally we discussed the various types of binary systems and the methods to estimate their masses as well as orbital parameters. The talk ended on a exciting note, as we simulated the trajectory of Oumuamau, wondering about the consequences of the various hypotheses explaining its puzzling, extra-gravitational acceleration. The lecture notes of the talk have been attached below.&lt;/p&gt;
+
+&lt;p&gt;Clear Skies!&lt;/p&gt;
+
+&lt;h3 id=&quot;lecture-notes&quot;&gt;Lecture Notes&lt;/h3&gt;
+
+&lt;div style=&quot;margin-top: 20px; margin-bottom: 20px;&quot;&gt;
+    &lt;iframe src=&quot;/Astrae_Website/assets/pdfs/main.pdf&quot; width=&quot;100%&quot; height=&quot;500px&quot; style=&quot;border: none;&quot;&gt;
+    This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&quot;/Astrae_Website/assets/pdfs/main.pdf&quot;&gt;Download PDF&lt;/a&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+    &lt;a href=&quot;/Astrae_Website/assets/pdfs/main.pdf&quot; class=&quot;btn btn-primary&quot; download=&quot;&quot;&gt;Download Lecture Notes (PDF)&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Celestial_Mechanics_Talk/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Celestial_Mechanics_Talk/</guid>
+        
+        <category>Astrophysics</category>
+        
+        <category>Talk</category>
+        
+        <category>CelMech</category>
+        
+        
+        <category>event</category>
+        
+      </item>
+    
+      <item>
+        <title>The Milky Way</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/The_Milky_Way/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/The_Milky_Way/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>Tail Of The Scorpio</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Owl_Cluster/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Owl_Cluster/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>Orion Nebula (M42)</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Orion_Nebula/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Orion_Nebula/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>A Path of Light in the Heavens</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Milky_Way_Mountain/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Milky_Way_Mountain/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>Lagoon (M8) and Trifid (M20) Nebulae</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Lagoon_and_Trifid_Nebulae/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Lagoon_and_Trifid_Nebulae/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>The King of Planets and His Four Consorts</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Jupiter/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Jupiter/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>Gibbous Moon</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://nandan-aditey.github.io/Astrae_Website/Gibbous_Moon/</link>
+        <guid isPermaLink="true">https://nandan-aditey.github.io/Astrae_Website/Gibbous_Moon/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+  </channel>
+</rss>

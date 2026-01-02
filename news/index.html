@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/Astrae_Website/assets/images/favicon.ico">
+
+<title>News | Astrae Website</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>News | Astrae</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="News" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="By IISc UG" />
+<meta property="og:description" content="By IISc UG" />
+<link rel="canonical" href="https://nandan-aditey.github.io/Astrae_Website/news/" />
+<meta property="og:url" content="https://nandan-aditey.github.io/Astrae_Website/news/" />
+<meta property="og:site_name" content="Astrae" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="News" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"By IISc UG","headline":"News","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://nandan-aditey.github.io/Astrae_Website/assets/images/logo.png"}},"url":"https://nandan-aditey.github.io/Astrae_Website/news/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/Astrae_Website/assets/css/screen.css" rel="stylesheet">
+
+<link href="/Astrae_Website/assets/css/main.css" rel="stylesheet">
+
+<script src="/Astrae_Website/assets/js/jquery.min.js"></script>
+
+<script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script type="text/javascript">
+    MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+    };
+</script>
+
+<meta name="google-site-verification" content="qaBgcgR9j3jCMDS8u26yP5EwHktl0s8hvd09QULS-hA" />
+
+</head>
+
+
+
+
+<body class="layout-default">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i%7COrbitron:400,700,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <div class="navbar-brand">
+    <img src="/Astrae_Website/assets/images/logo.png" alt="Astrae Website">
+    <span class="brand-text">ASTRAE</span>
+    </div>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                
+                <a class="nav-link" href="/Astrae_Website/">Home</a>
+                
+                </li>
+
+                <li class="nav-item ">
+                
+                <a class="nav-link" href="/Astrae_Website/events">Events</a>
+                
+                </li>
+
+                <li class="nav-item ">
+                
+                <a class="nav-link" href="/Astrae_Website/blog">Blog</a>
+                
+                </li>
+
+                <li class="nav-item ">
+                
+                <a class="nav-link" href="/Astrae_Website/pictures">PhotoArchive</a>
+                
+                </li>
+
+                <li class="nav-item active">
+                
+                <span class="nav-link">News</span>
+                
+                </li>
+
+                <li class="nav-item ">
+                
+                <a class="nav-link" href="/Astrae_Website/aboutus">About Us</a>
+                
+                </li>
+
+                
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+
+
+<div class="site-content">
+
+
+<div class="container">
+
+<!-- Content -->
+<div class="main-content">
+    <section class="news-page">
+  <!-- Calendar -->
+  <div class="calendar">
+    <div class="calendar-header">
+      <button onclick="prevMonth()">&lt;</button>
+      <h3 id="calendar-month"></h3>
+      <button onclick="nextMonth()">&gt;</button>
+    </div>
+    <div id="calendar-grid" class="calendar-grid"></div>
+  </div>
+
+  <!-- News feed -->
+  <div class="news-feed">
+    <h2>Latest News</h2>
+    
+    
+    
+  </div>
+</section>
+
+<!-- Pass posts data into JS -->
+<script>
+  const posts = [
+    
+      {
+        title: "Watching the Geminids Meteor Shower",
+        url: "/Astrae_Website/Geminids_Meteor_Shower_Observation_Session/",
+        date: "2025-12-14",
+        category: "event"
+      },
+    
+      {
+        title: "Total Lunar Eclipse Observation Session",
+        url: "/Astrae_Website/Lunar_Eclipse/",
+        date: "2025-09-07",
+        category: "event"
+      },
+    
+      {
+        title: "Celestial Mechanics for the Uninitiated",
+        url: "/Astrae_Website/Celestial_Mechanics_Talk/",
+        date: "2025-08-15",
+        category: "event"
+      },
+    
+      {
+        title: "The Milky Way",
+        url: "/Astrae_Website/The_Milky_Way/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "Tail Of The Scorpio",
+        url: "/Astrae_Website/Owl_Cluster/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "Orion Nebula (M42)",
+        url: "/Astrae_Website/Orion_Nebula/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "A Path of Light in the Heavens",
+        url: "/Astrae_Website/Milky_Way_Mountain/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "Lagoon (M8) and Trifid (M20) Nebulae",
+        url: "/Astrae_Website/Lagoon_and_Trifid_Nebulae/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "The King of Planets and His Four Consorts",
+        url: "/Astrae_Website/Jupiter/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "Gibbous Moon",
+        url: "/Astrae_Website/Gibbous_Moon/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "Flame and Horsehead Nebulae",
+        url: "/Astrae_Website/Flame_and_Horsehead_Nebulae/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "Flame Nebula",
+        url: "/Astrae_Website/Flame_Nebula/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "The Andromeda Galaxy (Messier 31 or M31)",
+        url: "/Astrae_Website/Andromeda/",
+        date: "2025-07-07",
+        category: "pictures"
+      },
+    
+      {
+        title: "A 'Tele' added a Tally... \\^o^/",
+        url: "/Astrae_Website/TellyTally/",
+        date: "2022-09-18",
+        category: "blog"
+      },
+    
+      {
+        title: "Astrae goes into \"ORBITS\"",
+        url: "/Astrae_Website/Astrae_Orbits/",
+        date: "2022-09-18",
+        category: "event"
+      },
+    
+      {
+        title: "Boom Goes the Rocket!",
+        url: "/Astrae_Website/Rocket_Launch/",
+        date: "2022-09-17",
+        category: "blog"
+      },
+    
+      {
+        title: "A Talk on Galaxy Formation and Dynamics by Shashank Dattathri",
+        url: "/Astrae_Website/Galaxy_Fromation/",
+        date: "2022-09-02",
+        category: "event"
+      },
+    
+      {
+        title: "Film Screening: Rocketry - The Nambi Effect",
+        url: "/Astrae_Website/Film_Screening/",
+        date: "2022-08-31",
+        category: "event"
+      },
+    
+      {
+        title: "Astrophotography and Image processing Workshop: Idea Presentation Day",
+        url: "/Astrae_Website/Astrophoto_Workshop/",
+        date: "2022-08-30",
+        category: "event"
+      }
+    
+  ];
+</script>
+
+<script>
+  const categoriesColors = {
+    news: "green",
+    pictures: "purple",
+    default: "gray"
+  };
+
+  let currentDate = new Date();
+
+  function renderCalendar() {
+    const month = currentDate.getMonth();
+    const year = currentDate.getFullYear();
+
+    // Month label
+    document.getElementById("calendar-month").innerText =
+      currentDate.toLocaleString("default", { month: "long" }) + " " + year;
+
+    // First day and days count
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    const grid = document.getElementById("calendar-grid");
+    grid.innerHTML = "";
+
+    // Empty slots for days before 1st
+    for (let i = 0; i < firstDay; i++) {
+      grid.appendChild(document.createElement("div"));
+    }
+
+    // Actual days
+    for (let day = 1; day <= daysInMonth; day++) {
+      const cell = document.createElement("div");
+      cell.className = "calendar-day";
+      cell.innerText = day;
+
+      // Match posts for this date
+      const dateKey = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const todaysPosts = posts.filter(p => p.date === dateKey);
+
+      if (todaysPosts.length > 0) {
+        const dots = document.createElement("div");
+        dots.className = "dots";
+        todaysPosts.forEach(p => {
+          const dot = document.createElement("span");
+          dot.style.backgroundColor = categoriesColors[p.category] || categoriesColors.default;
+          dot.title = p.title;
+          dots.appendChild(dot);
+        });
+        cell.appendChild(dots);
+
+        // Make date clickable
+        cell.onclick = () => {
+          window.location.href = todaysPosts[0].url;
+        };
+        cell.style.cursor = "pointer";
+      }
+
+      grid.appendChild(cell);
+    }
+  }
+
+  function prevMonth() {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    renderCalendar();
+  }
+
+  function nextMonth() {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    renderCalendar();
+  }
+
+  document.addEventListener("DOMContentLoaded", renderCalendar);
+</script>
+
+<!-- CSS -->
+<style>
+.news-page {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Calendar */
+.calendar {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 3px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* News feed */
+.news-feed h2 {
+  margin-bottom: 20px;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.news-date {
+  flex: 0 0 80px;
+  font-weight: bold;
+  color: #444;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h4 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.news-thumb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.news-content p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 0.9em;
+}
+</style>
+
+</div>
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+	</div>
+</div>
+
+<!-- Footer -->
+ 
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Astrae - 2026
+            </div>            
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                <a target="_blank">Developed by Databased</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- End Footer -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/Astrae_Website/assets/js/mediumish.js"></script>
+
+
+<script src="/Astrae_Website/assets/js/lazyload.js"></script>
+
+
+<script src="/Astrae_Website/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+
+</body>
+</html>
