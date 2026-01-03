@@ -1,2 +1,3 @@
 # Astrae Website
-Created by Databased
+Created by Aditey Nandan(the absolute GOAT 🛐🛐🛐🛐)
+Maintained by Animesh Pradhan
