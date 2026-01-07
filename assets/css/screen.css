@@ -1656,3 +1656,12 @@ img:hover+.post-tag {
 body {
     padding-top: 50px; /* Adjust on basis height of navbar - might take many trialss */
 }
+
+.blue-link {
+    color: #007bff !important;
+}
+
+.blue-link:hover {
+    color: #0056b3 !important;
+    text-decoration: underline !important;
+}
