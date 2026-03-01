@@ -3,6 +3,61 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+
+:root {
+    --bg-color: #fff;
+    --text-color: #222;
+    --text-muted: rgba(0, 0, 0, .44);
+    --heading-color: #333;
+    --nav-bg: #000;
+    --footer-bg: #fff;
+    --card-bg: #fff;
+    --card-footer-bg: #f8f9fa;
+    --gray-bg: #fafafa;
+    --link-color: #00ab6b;
+    --border-color: rgba(0, 0, 0, .125);
+    --spoiler-bg: #222;
+    --spoiler-text: #fff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --heading-color: #fff;
+    --nav-bg: #000;
+    --footer-bg: #1e1e1e;
+    --card-bg: #1e1e1e;
+    --card-footer-bg: #252525;
+    --gray-bg: #181818;
+    --link-color: #00d68f;
+    --border-color: #333;
+    --spoiler-bg: #ccc;
+    --spoiler-text: #000;
+}
+
+body {
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('../images/backg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Remove space between navbar and image on homepage */
+.layout-default .site-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.layout-default .main-content {
+    margin-top: 0 !important;
+}
+
+.layout-default .mainheading {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
@@ -12,7 +67,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: #00ab6b;
+    color: var(--link-color);
     transition: all 0.2s;
 }
 
@@ -39,7 +94,7 @@ pre {
 }
 
 .mediumnavigation {
-    background: rgba(255, 255, 255, .97);
+    background: var(--nav-bg) !important;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
     transition: top 0.2s ease-in-out;
 
@@ -125,6 +180,10 @@ section.recent-posts {
     overflow: hidden;
 }
 
+.card {
+    background-color: var(--card-bg);
+}
+
 .listfeaturedtag .card,
 .card-footer {
     border: 0;
@@ -153,7 +212,7 @@ section.recent-posts {
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
-    color: rgba(0, 0, 0, .44);
+    color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
     font-weight: 400;
@@ -239,7 +298,7 @@ section.recent-posts {
 
 .author-meta .post-name {
     font-size: 15px; /* Adjust the font size */
-    color: #4d4a4a95;  /* Change the color to any desired value */
+    color: var(--text-color, #333);  /* Support dark mode */
 }
 
 
@@ -251,7 +310,7 @@ span.author-meta {
 
 span.post-date,
 span.post-read {
-    color: rgba(0, 0, 0, .44);
+    color: var(--text-muted, #555);
 }
 
 span.post-read-more {
@@ -262,12 +321,12 @@ span.post-read-more {
 }
 
 span.post-read-more a {
-    color: rgba(0, 0, 0, .44);
+    color: var(--text-muted, rgba(0, 0, 0, .44));
 }
 
 span.post-name a,
 span.post-read-more a:hover {
-    color: rgba(0, 0, 0, .8);
+    color: var(--text-color, rgba(0, 0, 0, .8));
 }
 
 .dot:after {
@@ -341,11 +400,11 @@ span.post-read-more a:hover {
     padding-top: 15px;
     padding-bottom: 12px;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, .44);
+    color: var(--text-muted);
     margin-top: 50px;
     margin-bottom: 62px;
     position: relative;
-    background: #fff;
+    background: var(--footer-bg);
 }
 
 .link-dark {
@@ -356,7 +415,7 @@ span.post-read-more a:hover {
     font-family: Merriweather;
     font-size: 1.1rem;
     line-height: 1.84;
-    color: rgba(0, 0, 0, .8);
+    color: var(--text-color);
 }
 
 blockquote {
@@ -504,7 +563,7 @@ blockquote {
 }
 
 .graybg {
-    background-color: #fafafa;
+    background-color: var(--gray-bg);
     padding: 40px 0 46px;
     position: relative;
 }
@@ -727,6 +786,17 @@ h6 {
 .article-post h6 {
     font-weight: 700;
     margin-bottom: 1.5rem;
+}
+
+.article-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    padding: 2px;
+    background: linear-gradient(135deg, #555, #111);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5), 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 1.5rem auto; /* Center image and add spacing */
 }
 
 .article-post img.shadow {
@@ -1407,13 +1477,13 @@ iframe {
 }
 
 .card-body:hover {
-    color: #0056b3; /* Change text color on hover */
+    color: var(--heading-color, #0056b3); /* Change text color on hover */
 }
 
 /* Title Link Hover Effect */
 .card-title a {
     text-decoration: none; /* Remove underline by default */
-    color: #333; /* Default color */
+    color: var(--text-color, #333); /* Default color */
     transition: color 0.3s ease;
 }
 
@@ -1424,14 +1494,9 @@ iframe {
 
 /* Footer Hover Effect (Optional) */
 .card-footer {
-    background-color: #f8f9fa; /* Light background */
+    background-color: var(--card-footer-bg, #f8f9fa); /* Light background */
     transition: background-color 0.3s ease;
 }
-
-.card-footer:hover {
-    background-color: #e9ecef; /* Slightly darker background on hover */
-}
-
 
 /* Card Container */
 .card-group .card {
@@ -1463,7 +1528,7 @@ iframe {
 }
 
 .card-body:hover {
-    color: #333; /* Slight change for hover feedback */
+    color: var(--text-color, #333); /* Slight change for hover feedback */
 }
 
 /* Title Link Hover Effect */
@@ -1480,32 +1545,28 @@ iframe {
 
 /* Excerpt Hover Effect */
 .card-text {
-    color: #666; /* Default excerpt color */
+    color: var(--text-color, #666); /* Default excerpt color */
     transition: color 0.3s ease;
 }
 
 .card-text:hover {
-    color: #444; /* Slightly darker on hover */
+    color: var(--heading-color, #444); /* Slightly darker on hover */
 }
 
 /* Footer */
 .card-footer {
-    background-color: #f8f9fa; /* Default light background */
+    background-color: var(--card-footer-bg);
     transition: background-color 0.3s ease;
-}
-
-.card-footer:hover {
-    background-color: #e9ecef; /* Slightly darker background */
 }
 
 /* Post Date Hover Effect */
 .post-date {
-    color: #999; /* Default date color */
+    color: var(--text-muted, #555); /* Default date color */
     transition: color 0.3s ease;
 }
 
 .post-date:hover {
-    color: #666; /* Slightly darker on hover */
+    color: var(--text-color, #333); /* Slightly darker on hover */
 }
 
 
@@ -1640,7 +1701,9 @@ img:hover+.post-tag {
     font-weight: 700;       /* Bold looks best for logos */
     font-size: 2.0rem;      /* Adjust size to match the logo height */
     letter-spacing: 3px;    /* Adds that wide "space" look */
-    color: #333;            /* Dark grey color (or use #00ab6b for green) */
+    background: linear-gradient(145deg, #777 0%, #fff 50%, #777 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     line-height: 1;         /* Prevents text from having weird vertical gaps */
 }
