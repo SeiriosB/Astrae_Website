@@ -1731,3 +1731,53 @@ body {
     color: #0056b3 !important;
     text-decoration: underline !important;
 }
+
+
+/* =========================================
+   MOBILE & ANDROID FIXES
+   ========================================= */
+@media (max-width: 768px) {
+    /* 1. Fix Logo and Navbar overlapping */
+    .navbar-brand img {
+        height: 50px !important; /* Scale down logo for mobile */
+    }
+    .brand-text {
+        font-size: 1.5rem !important; /* Scale down ASTRAE text */
+        letter-spacing: 1px !important;
+    }
+    .navbar {
+        flex-direction: row !important; /* Keeps logo and hamburger menu on the same line */
+        justify-content: space-between !important;
+    }
+
+    /* 2. Fix Editor boxes becoming too thin and text overlapping */
+    .editor-inner-rectangle {
+        width: 100% !important; /* Expand to full width of the mobile screen */
+        height: auto !important; /* Allow the box to grow with the text */
+        padding-bottom: 15px;
+    }
+    .editor-image {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* 3. Fix Team Member boxes cutting off content */
+    .team-member-inner-rectangle {
+        height: auto !important;
+        padding-bottom: 15px;
+    }
+
+    /* 4. Fix fixed widths causing horizontal scrolling on small phones */
+    .UNDOpicture-inner-rectangle {
+        width: 100% !important;
+        max-width: 350px !important; /* Keeps it looking normal if the phone is slightly wider */
+        height: auto !important;
+    }
+
+    /* 5. Fix text and image overlaps in the Featured and Latest post boxes */
+    .feature-box .listfeaturedtag,
+    .feature-box .wrapthumbnail img {
+        height: auto !important;
+        min-height: 150px;
+    }
+}
