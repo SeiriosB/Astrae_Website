@@ -83,6 +83,15 @@
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
 
+        <!-- Mobile-only close button -->
+        <button class="mobile-nav-close d-lg-none" aria-label="Close navigation">&times;</button>
+
+        <!-- Mobile-only logo shown in fullscreen menu -->
+        <div class="mobile-nav-logo d-lg-none text-center mb-4">
+            <img src="/Astrae_Website/assets/images/logo.png" alt="Astrae Website" style="height: 210px;">
+            <div style="color: white; font-family: 'Orbitron', sans-serif; font-size: 1.4rem; font-weight: 700; margin-top: 0.5rem;">ASTRAE</div>
+        </div>
+
         <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
@@ -131,6 +140,7 @@
 
     </div>
 </nav>
+
 
 
 <div class="site-content">
@@ -4589,6 +4599,42 @@
 .constellations-section, .messier-section {
   border-top: 1px solid var(--border-color, #333) !important;
 }
+
+@media (max-width: 768px) {
+  .news-page {
+    grid-template-columns: 1fr !important;
+    padding: 10px !important;
+    gap: 16px !important;
+  }
+
+  .calendar {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .calendar-grid {
+    gap: 3px !important;
+  }
+
+  .calendar-day {
+    padding: 4px 2px !important;
+    font-size: 0.75em !important;
+  }
+
+  .calendar-weekday {
+    font-size: 0.65em !important;
+  }
+
+  .news-date {
+    flex: 0 0 55px !important;
+    font-size: 0.85em !important;
+  }
+
+  .news-content h4 {
+    font-size: 1em !important;
+  }
+}
 </style>
 </div>
     
@@ -4634,6 +4680,32 @@
 
 
 <script src="/Astrae_Website/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<script>
+  $(document).ready(function() {
+    function closeMobileNav() {
+      var $nav = $('#navbarMediumish');
+      if (!$nav.hasClass('show')) return;
+      $nav.addClass('mobile-nav-closing');
+      setTimeout(function() {
+        $nav.removeClass('mobile-nav-closing');
+        // Remove show without Bootstrap animation (collapsing is already hidden by CSS)
+        $nav.removeClass('show');
+        $('.navbar-toggler').attr('aria-expanded', 'false');
+      }, 300);
+    }
+
+    // Close button
+    $('.mobile-nav-close').on('click', function() {
+      closeMobileNav();
+    });
+
+    // Auto-close on nav link click
+    $('#navbarMediumish .nav-link').on('click', function() {
+      closeMobileNav();
+    });
+  });
+</script>
 
 
 

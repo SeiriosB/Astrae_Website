@@ -84,6 +84,15 @@
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
 
+        <!-- Mobile-only close button -->
+        <button class="mobile-nav-close d-lg-none" aria-label="Close navigation">&times;</button>
+
+        <!-- Mobile-only logo shown in fullscreen menu -->
+        <div class="mobile-nav-logo d-lg-none text-center mb-4">
+            <img src="/Astrae_Website/assets/images/logo.png" alt="Astrae Website" style="height: 210px;">
+            <div style="color: white; font-family: 'Orbitron', sans-serif; font-size: 1.4rem; font-weight: 700; margin-top: 0.5rem;">ASTRAE</div>
+        </div>
+
         <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
@@ -132,6 +141,7 @@
 
     </div>
 </nav>
+
 
 
 <div class="site-content">
@@ -209,6 +219,14 @@
       }
     }
     
+    @media (max-width: 768px) {
+      .home-header h1 {
+        font-size: 0.75rem !important;
+        -webkit-text-stroke: 0.5px black !important;
+        line-height: 1.3 !important;
+      }
+    }
+
     /* Ensure the header expands beyond the container if necessary, or just fills it */
     .home-header-container {
         width: 100vw;
@@ -644,6 +662,32 @@
 
 
 <script src="/Astrae_Website/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<script>
+  $(document).ready(function() {
+    function closeMobileNav() {
+      var $nav = $('#navbarMediumish');
+      if (!$nav.hasClass('show')) return;
+      $nav.addClass('mobile-nav-closing');
+      setTimeout(function() {
+        $nav.removeClass('mobile-nav-closing');
+        // Remove show without Bootstrap animation (collapsing is already hidden by CSS)
+        $nav.removeClass('show');
+        $('.navbar-toggler').attr('aria-expanded', 'false');
+      }, 300);
+    }
+
+    // Close button
+    $('.mobile-nav-close').on('click', function() {
+      closeMobileNav();
+    });
+
+    // Auto-close on nav link click
+    $('#navbarMediumish .nav-link').on('click', function() {
+      closeMobileNav();
+    });
+  });
+</script>
 
 
 
