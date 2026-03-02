@@ -108,10 +108,12 @@ pre {
 }
 
 .site-content {
-    min-height: 60vh;
+    min-height: calc(100vh - 50px);
     padding-top: 1.5rem;
     margin-top: 57px;
     transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -401,8 +403,8 @@ span.post-read-more a:hover {
     padding-bottom: 12px;
     font-size: 0.8rem;
     color: var(--text-muted);
-    margin-top: 50px;
-    margin-bottom: 62px;
+    margin-top: auto;
+    margin-bottom: 0;
     position: relative;
     background: var(--footer-bg);
 }
@@ -585,14 +587,15 @@ ul.tags li {
 }
 
 ul.tags li a {
-    background: rgba(0, 0, 0, .05);
-    color: rgba(0, 0, 0, .6);
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
     border-radius: 3px;
     padding: 5px 10px;
 }
 
 ul.tags li a:hover {
-    background: rgba(0, 0, 0, .07);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -1282,10 +1285,10 @@ iframe {
 .picture-inner-rectangle {
     flex: 1 1 calc(30% - 20px); /* Flexible width: 30% minus gap */
     max-width: calc(30% - 20px); /* Prevent growing too large */
-    background-color: #f0f0f0; /* Optional background */
-    padding: 15px; /* Internal padding */
+    background-color: transparent !important; /* Optional background */
+    padding: 0 !important; /* Internal padding */
     text-align: center; /* Center align text */
-    border: 1px solid #ccc; /* Optional border */
+    border: 1px solid gray !important; /* Optional border */
     box-sizing: border-box; /* Include padding in size calculations */
 }
 
