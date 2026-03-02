@@ -1732,49 +1732,72 @@ body {
     text-decoration: underline !important;
 }
 
-
 /* =========================================
    MOBILE & ANDROID FIXES
    ========================================= */
 @media (max-width: 768px) {
-    /* 1. Fix Logo and Navbar overlapping */
+    /* 1. Fix Navbar being vertical and unreadable */
+    .navbar {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap !important; /* Allows the opened menu to drop below the logo */
+    }
+    .navbar-collapse {
+        flex-basis: 100% !important; /* Forces menu to take full width */
+        background-color: var(--nav-bg, #000) !important; /* Solid background for readability */
+        padding: 15px;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 8px;
+    }
+    .navbar-nav {
+        flex-direction: column !important; /* Stacks the links neatly */
+    }
     .navbar-brand img {
-        height: 50px !important; /* Scale down logo for mobile */
+        height: 50px !important;
     }
     .brand-text {
-        font-size: 1.5rem !important; /* Scale down ASTRAE text */
+        font-size: 1.5rem !important;
         letter-spacing: 1px !important;
     }
-    .navbar {
-        flex-direction: row !important; /* Keeps logo and hamburger menu on the same line */
-        justify-content: space-between !important;
+
+    /* 2. Fix Homepage Main Text too big */
+    .mainheading h1 {
+        font-size: 1.8rem !important; /* Scale down the giant title */
+    }
+    .mainheading .lead {
+        font-size: 1rem !important;   /* Scale down the subtitle */
     }
 
-    /* 2. Fix Editor boxes becoming too thin and text overlapping */
-    .editor-inner-rectangle {
-        width: 100% !important; /* Expand to full width of the mobile screen */
-        height: auto !important; /* Allow the box to grow with the text */
+    /* 3. Fix Footer Image missing */
+    .jumbotron.fortags {
+        height: 200px !important; /* Give it a height so the background image shows */
+        display: block !important;
+    }
+
+    /* 4. Fix PhotoArchive Overflow */
+    .pictures-container {
+        padding: 5px !important;
+        overflow-x: hidden !important; /* Strictly prevents horizontal scrolling */
+    }
+    .UNDOpicture-inner-rectangle, .picture-inner-rectangle {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;  /* Remove horizontal margins pushing it off-screen */
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* General Editor/Team boxes fixes from before */
+    .editor-inner-rectangle, .team-member-inner-rectangle {
+        width: 100% !important;
+        height: auto !important;
         padding-bottom: 15px;
     }
     .editor-image {
         width: 100% !important;
         height: auto !important;
     }
-
-    /* 3. Fix Team Member boxes cutting off content */
-    .team-member-inner-rectangle {
-        height: auto !important;
-        padding-bottom: 15px;
-    }
-
-    /* 4. Fix fixed widths causing horizontal scrolling on small phones */
-    .UNDOpicture-inner-rectangle {
-        width: 100% !important;
-        max-width: 350px !important; /* Keeps it looking normal if the phone is slightly wider */
-        height: auto !important;
-    }
-
-    /* 5. Fix text and image overlaps in the Featured and Latest post boxes */
     .feature-box .listfeaturedtag,
     .feature-box .wrapthumbnail img {
         height: auto !important;
