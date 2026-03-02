@@ -1225,11 +1225,12 @@ iframe {
 /* Pictures Post Format */
 
 .pictures-image {
-    width: 100%;  /* Decrease the width to make the image narrower */
-    height: 250px;  /* Increase height to make the image taller */
-    object-fit: cover;  /* Ensure the image covers the space without stretching */
-    border-radius: 5px;
-    margin: 10px auto;  /* Center the image and add space on left and right */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+    margin: 0;
 }
 
 .pictures-name {
@@ -1283,13 +1284,14 @@ iframe {
 
 /* Individual post */
 .picture-inner-rectangle {
-    flex: 1 1 calc(30% - 20px); /* Flexible width: 30% minus gap */
-    max-width: calc(30% - 20px); /* Prevent growing too large */
-    background-color: transparent !important; /* Optional background */
-    padding: 0 !important; /* Internal padding */
-    text-align: center; /* Center align text */
-    border: 1px solid gray !important; /* Optional border */
-    box-sizing: border-box; /* Include padding in size calculations */
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    background-color: transparent !important;
+    padding: 0 !important;
+    text-align: center;
+    border: 1px solid gray !important;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Responsive adjustments */
