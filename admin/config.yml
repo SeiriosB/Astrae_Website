@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: SeiriosB/Astrae_Website
+  branch: main
+  # PKCE auth — works on GitHub Pages without any server proxy.
+  # Replace YOUR_OAUTH_APP_CLIENT_ID with your GitHub OAuth App's Client ID.
+  auth_type: pkce
+  app_id: YOUR_OAUTH_APP_CLIENT_ID
+
+# Where uploaded images are saved in the repo
+media_folder: "assets/images/Stories"
+# Path used in generated Markdown
+public_folder: "/assets/images/Stories"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    # File name pattern: 2024-06-15-my-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout",     name: "layout",     widget: "hidden", default: "post" }
+      - { label: "Title",      name: "title",      widget: "string" }
+      - { label: "Author",     name: "author",     widget: "string" }
+      - label: "Category"
+        name: "categories"
+        widget: "select"
+        options: ["event", "blog", "news"]
+        default: "blog"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        hint: "Press Enter after each tag (e.g. Astrophotography, Workshop)"
+      - { label: "Excerpt",    name: "excerpt",    widget: "text",
+          hint: "Short summary shown on the blog listing page." }
+      - { label: "Cover Image",name: "image",      widget: "image", required: false,
+          hint: "Optional — upload or leave blank." }
+      - { label: "Featured",   name: "featured",   widget: "boolean", default: false }
+      - { label: "Latest",     name: "latest",     widget: "boolean", default: false }
+      - { label: "All",        name: "all",        widget: "hidden",  default: true }
+      - { label: "Body",       name: "body",       widget: "markdown" }
