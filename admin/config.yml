@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: SeiriosB/Astrae_Website
+  name: git-gateway
   branch: main
-  # Sveltia CMS handles GitHub authentication automatically — no OAuth app needed.
 
 # Editorial workflow: all changes become pull requests on GitHub.
 # Contributors can draft/edit posts; only admins with merge rights can publish or delete.
