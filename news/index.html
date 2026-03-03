@@ -5258,7 +5258,82 @@
     font-size: 1em !important;
   }
 }
+
+/* Touch-friendly tooltip (shown on tap, hidden on release) */
+#touch-tooltip {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  background: rgba(20,20,20,0.95);
+  color: #e0e0e0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding: 0.55rem 0.75rem;
+  border-radius: 7px;
+  border: 1px solid #444;
+  max-width: min(280px, 80vw);
+  white-space: pre-wrap;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+}
 </style>
+
+<div id="touch-tooltip"></div>
+<script>
+(function () {
+  var tip = document.getElementById('touch-tooltip');
+  var hideTimer;
+
+  function showTip(text, touch) {
+    clearTimeout(hideTimer);
+    var x = touch.clientX;
+    var y = touch.clientY;
+    tip.textContent = text;
+    tip.style.display = 'block';
+    // Position above the finger; clamp to viewport edges
+    var tw = tip.offsetWidth;
+    var th = tip.offsetHeight;
+    var left = Math.min(Math.max(x - tw / 2, 8), window.innerWidth - tw - 8);
+    var top  = y - th - 14;
+    if (top < 8) top = y + 22; // flip below if too close to top
+    tip.style.left = left + 'px';
+    tip.style.top  = top  + 'px';
+  }
+
+  function hideTip() {
+    hideTimer = setTimeout(function () { tip.style.display = 'none'; }, 200);
+  }
+
+  // Attach touch listeners to any element that has a title attribute.
+  // Called once after the calendar/messier renders.
+  window.attachTouchTooltips = function (root) {
+    var els = (root || document).querySelectorAll('[title]');
+    els.forEach(function (el) {
+      if (el._touchTooltipBound) return;
+      el._touchTooltipBound = true;
+      el.addEventListener('touchstart', function (e) {
+        var text = el.title;
+        if (!text) return;
+        showTip(text, e.touches[0]);
+        // Don't preventDefault — allow scroll to still work
+      }, { passive: true });
+      el.addEventListener('touchend',    hideTip, { passive: true });
+      el.addEventListener('touchcancel', hideTip, { passive: true });
+    });
+  };
+
+  // Re-attach after every calendar render (calendar rebuilds DOM each time)
+  document.addEventListener('DOMContentLoaded', function () {
+    // MutationObserver watches for new [title] elements added by renderCalendar()
+    var observer = new MutationObserver(function () {
+      window.attachTouchTooltips();
+    });
+    var calEl = document.getElementById('calendar') || document.body;
+    observer.observe(calEl, { childList: true, subtree: true });
+    window.attachTouchTooltips();
+  });
+})();
+</script>
 </div>
     
 </div>
