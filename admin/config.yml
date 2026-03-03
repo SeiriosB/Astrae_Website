@@ -2,10 +2,7 @@ backend:
   name: github
   repo: SeiriosB/Astrae_Website
   branch: main
-  # PKCE auth — works on GitHub Pages without any server proxy.
-  # Replace YOUR_OAUTH_APP_CLIENT_ID with your GitHub OAuth App's Client ID.
-  auth_type: pkce
-  app_id: Ov23liay58iOeldRSwnW
+  # Sveltia CMS handles GitHub authentication automatically — no OAuth app needed.
 
 # Where uploaded images are saved in the repo
 media_folder: "assets/images/Stories"
