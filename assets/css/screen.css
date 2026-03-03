@@ -1183,14 +1183,14 @@ iframe {
 .editors-note-content blockquote {
     font-size: 1.1rem;
     font-style: italic;
-    color: #555;
-    background-color: #f9f9f9;  /* Light gray background */
+    color: #ccc;
+    background-color: #1a1a1a;
     padding: 15px;
-    border-left: 5px solid #000;  /* Bold left border to make it stand out */
+    border-left: 5px solid #444;
     margin-top: 30px;
     margin-bottom: 30px;
     line-height: 1.6;
-    text-align: left; /* Align the text left for better readability */
+    text-align: left;
     border-radius: 8px;
 }
 
@@ -1198,9 +1198,9 @@ iframe {
 .editors-note-content p {
     font-size: 1.1rem;
     font-weight: 400;
-    color: #333;
+    color: #ccc;
     padding: 20px;
-    background-color: #f4f4f4; /* Slight background color to distinguish from other sections */
+    background-color: #1a1a1a;
     border-radius: 8px;
     margin-top: 10px;
 }
