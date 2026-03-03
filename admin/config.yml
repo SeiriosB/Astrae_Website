@@ -4,6 +4,10 @@ backend:
   branch: main
   # Sveltia CMS handles GitHub authentication automatically — no OAuth app needed.
 
+# Editorial workflow: all changes become pull requests on GitHub.
+# Contributors can draft/edit posts; only admins with merge rights can publish or delete.
+publish_mode: editorial_workflow
+
 # Where uploaded images are saved in the repo
 media_folder: "assets/images/Stories"
 # Path used in generated Markdown
@@ -32,9 +36,16 @@ collections:
         hint: "Press Enter after each tag (e.g. Astrophotography, Workshop)"
       - { label: "Excerpt",    name: "excerpt",    widget: "text",
           hint: "Short summary shown on the blog listing page." }
-      - { label: "Cover Image",name: "image",      widget: "image", required: false,
-          hint: "Optional — upload or leave blank." }
+      - { label: "Cover Image", name: "image", widget: "image", required: false,
+          hint: "Optional — shown as thumbnail on the blog listing page." }
+      - label: "Extra Images"
+        name: "side_gallery"
+        widget: "list"
+        required: false
+        hint: "Additional images shown in a side gallery alongside the post body."
+        field: { label: "Image", name: "image", widget: "image" }
       - { label: "Featured",   name: "featured",   widget: "boolean", default: false }
       - { label: "Latest",     name: "latest",     widget: "boolean", default: false }
       - { label: "All",        name: "all",        widget: "hidden",  default: true }
-      - { label: "Body",       name: "body",       widget: "markdown" }
+      - { label: "Body",       name: "body",       widget: "markdown",
+          hint: "Tip: use the image button in the toolbar to insert images inline anywhere in the post." }
