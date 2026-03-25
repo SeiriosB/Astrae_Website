@@ -5,24 +5,9 @@
     <description>By IISc UG</description>
     <link>https://seiriosb.github.io/Astrae_Website/</link>
     <atom:link href="https://seiriosb.github.io/Astrae_Website/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Mar 2026 05:04:26 +0000</pubDate>
-    <lastBuildDate>Wed, 25 Mar 2026 05:04:26 +0000</lastBuildDate>
+    <pubDate>Wed, 25 Mar 2026 05:07:56 +0000</pubDate>
+    <lastBuildDate>Wed, 25 Mar 2026 05:07:56 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
-    
-      <item>
-        <title>mic testing</title>
-        <description>&lt;p&gt;lorem ipsum lorem ipsum&lt;/p&gt;
-</description>
-        <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-        <link>https://seiriosb.github.io/Astrae_Website/mic-testing/</link>
-        <guid isPermaLink="true">https://seiriosb.github.io/Astrae_Website/mic-testing/</guid>
-        
-        <category>lal al al</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
     
       <item>
         <title>Mass loss in Galactic Globular Clusters</title>
@@ -211,6 +196,19 @@
         <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
         <link>https://seiriosb.github.io/Astrae_Website/Lagoon_and_Trifid_Nebulae/</link>
         <guid isPermaLink="true">https://seiriosb.github.io/Astrae_Website/Lagoon_and_Trifid_Nebulae/</guid>
+        
+        
+        <category>pictures</category>
+        
+      </item>
+    
+      <item>
+        <title>The King of Planets and His Four Consorts</title>
+        <description>
+</description>
+        <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+        <link>https://seiriosb.github.io/Astrae_Website/Jupiter/</link>
+        <guid isPermaLink="true">https://seiriosb.github.io/Astrae_Website/Jupiter/</guid>
         
         
         <category>pictures</category>
